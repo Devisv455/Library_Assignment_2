@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Display</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: burlywood;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .heading {
+            color: #fff;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .Base {
+            display: flex;
+        }
+
+        .mydiv1,
+        .mydiv2,
+        .mydiv3 {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            max-width: 300px; /* Set a fixed width for each div */
+            margin: 0 auto; /* Center divs horizontally */
+        }
+
+        .mydiv1 img,
+        .mydiv2 img,
+        .mydiv3 img {
+            width: 100%; /* Set image width to 100% */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .mydiv1 a,
+        .mydiv2 a,
+        .mydiv3 a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .mydiv1 a:hover,
+        .mydiv2 a:hover,
+        .mydiv3 a:hover {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Welcome to Our Book Collection</h1>
+        <div class="Base">
+            <div class="mydiv1">
+                <img src="../images/hp.jpg" alt="Harry Potter">
+                <a href="fictions.html">Click Here to Explore</a>
+            </div>
+            <div class="mydiv2">
+                <img src="../images/dracula.jpg" alt="Dracula">
+                <a href="ghost.html">Click Here to Explore</a>
+            </div>
+            <div class="mydiv3">
+                <img src="../images/kill bird.jpg" alt="To Kill a Mockingbird">
+                <a href="novels.html">Click Here to Explore</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

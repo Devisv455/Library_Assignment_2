@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body { 
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: url("../images/Home\ page.jpg");
+            background-size: cover;
+            background-position: fixed;
+            color: #fff; /* Text color */
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            border: none;
+            border-radius: 0;
+        }
+
+        .navbar-brand, .navbar-nav li a {
+            color: #fff !important; 
+            font-size: 18px; /* Navbar text size */
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .navbar-nav li a {
+            padding: 10px 15px; /* Navbar link padding */
+        }
+
+        .navbar-nav li a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Hover background color */
+            border-radius: 5px; /* Rounded corners on hover */
+        }
+
+        .navbar-nav li.active a {
+            background-color: rgba(255, 255, 255, 0.3); /* Active link background color */
+            border-radius: 5px; /* Rounded corners on active link */
+        }
+
+        .navbar-toggle {
+            border: 1px solid #fff; /* Navbar toggle button border */
+        }
+
+        .navbar-toggle .icon-bar {
+            background-color: #fff; /* Navbar toggle button color */
+        }
+        .data {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .jumbotron {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .jumbotron h3 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .jumbotron p {
+            font-size: 20px;
+        }
+
+        .data h3 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .data a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .data a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="#">Home</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign-Up</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <h3>Welcome to Book World</h3>      
+        <p>Improve your Knowledge</p>
+    </div>
+
+    <div class="data">
+        <h3>Our Collections</h3>
+        <a href="books_display.html">See wonders</a>
+    </div>
+
+</body>
+</html>

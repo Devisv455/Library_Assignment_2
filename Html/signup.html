@@ -1,0 +1,129 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    
+    <link rel="stylesheet" href="../style/signup.css">
+
+</head>
+<body>
+
+    <form action="login.html" method="post">
+        <fieldset>
+           <legend>Registeration Form</legend>
+            <h3 >Kindly fill all the details</h3>
+            
+            <label for="fname">FirstName:</label>
+            <input name="fname" type="text" placeholder="Enter your firstname" required autofocus>
+            <br><br>
+           
+              <label for="lname">LastName:</label>
+            <input name="lname" type="text" placeholder="Enter your lastname">
+            <br><br>
+            
+              <label for="age">Age:</label>
+            <input name="age" type="number" placeholder="Enter your age">
+            <br><br>
+            
+             <label for="place">Place:</label>
+   
+            <input name="place" type="text" placeholder="Enter your place">
+             <br><br>
+   -->
+            
+            <!-- <select>
+                <option>Select</option>
+                  <option selected>TVM</option>
+                  <option>KOLLAM</option>
+                  <option>ALAPPEY</option>
+            
+           
+            </select>
+            <br><br>
+            
+             <label for="phone">Phone-Number:</label>
+           <input name="phone" type="number" placeholder="Enter your mobile-num">
+            <br><br>
+            
+             <label for="email">Email-id:</label>
+            <input name="email" type="email" placeholder="Enter your email-id">
+            <br><br>
+            
+            
+             <label for="password">Password:</label>
+            <input name="password" type="password" placeholder="Enter password">
+            <br><br>
+            
+            <button type="submit">Submit</button>
+            <br><br>
+           
+            
+       
+       </fieldset>
+       
+       </form>
+    
+</body> -->
+<!-- </html> --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    
+    <link rel="stylesheet" href="../style/signup.css">
+    <script src="validation.js"></script>
+</head>
+<body>
+
+    <form action="login.html" method="post" id="signupForm">
+        <fieldset>
+           <legend>Registration Form</legend>
+            <h3>Kindly fill all the details</h3>
+            
+            <label for="fname">First Name:</label>
+            <input name="fname" type="text" placeholder="Enter your firstname" required autofocus>
+            <br><br>
+           
+            <label for="lname">Last Name:</label>
+            <input name="lname" type="text" placeholder="Enter your lastname">
+            <br><br>
+            
+            <label for="age">Age:</label>
+            <input name="age" type="number" placeholder="Enter your age">
+            <br><br>
+            
+            <label for="place">Place:</label>
+            <select name="place">
+                <option>Select</option>
+                <option selected>TVM</option>
+                <option>KOLLAM</option>
+                <option>ALAPPEY</option>
+            </select>
+            <br><br>
+            
+            <label for="phone">Phone-Number:</label>
+<input name="phone" type="text" placeholder="Enter your mobile-num" pattern="[0-9]{10}" required>
+<br><br>
+            
+            <label for="email">Email-id:</label>
+            <input name="email" type="email" placeholder="Enter your email-id" required>
+            <br><br>
+            <label for="password">Password:</label>
+            <input name="password" type="password" placeholder="Enter password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            <div id="passwordStrength"></div>
+            <br><br>
+            
+            <button type="submit">Submit</button>
+            <br><br>
+        </fieldset>
+    </form>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+body{ 
+    background-image: url("../images/Login.jpg");
+    background-size: cover;
+    background-position: fixed;
+}
+form{
+    margin-left: 400;
+    margin-top: 80;
+    width:400;
+    background-color:beige;
+}
+legend{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20;
+    
+}
+h3{
+    text-align: center;
+}

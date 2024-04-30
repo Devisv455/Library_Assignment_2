@@ -1,0 +1,35 @@
+body{ 
+    background-image: url("../images/signUp.jpg");
+    background-size: cover;
+    background-position: fixed;
+}
+form{
+    margin-left: 400;
+    margin-top: 80;
+    width:400;
+    background-color: beige;
+}
+legend{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20;
+    
+}
+h3{
+    text-align: center;
+}
+fieldset legend + h3 ~ input[type="password"] {
+    transition: background-color 0.3s ease;
+  }
+  
+  fieldset legend + h3 ~ input[type="password"].strong {
+    background-color: green;
+  }
+  
+  fieldset legend + h3 ~ input[type="password"].medium {
+    background-color: orange;
+  }
+  
+  fieldset legend + h3 ~ input[type="password"].weak {
+    background-color: red;
+  }

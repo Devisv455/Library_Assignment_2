@@ -1,0 +1,26 @@
+body{ 
+    background-image: url("../images/Home\ page.jpg");
+    background-size: cover;
+    background-position: fixed;
+}
+.navbar-nav {
+    /* Remove bullets */
+     margin: 0; /* Remove default margin */
+     padding: 0; /* Remove default padding */
+     
+     color: white;
+ 
+   }
+   .navbar-nav li {
+     margin-top: 14px;
+     list-style: none; 
+     margin-right: 12px; /* Add right margin between nav items */
+     
+   }
+   .navbar-nav.ms-auto {
+     margin-left: auto; /* Move navbar items to the right */
+     margin-left: 700px;
+   }
+  
+ 
+ 
